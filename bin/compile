@@ -55,7 +55,7 @@ export MAVEN_OPTS="-Xmx512m"
 # AndroMDA is not compatible with "mvn clean install"
 # Reference: http://forum.andromda.org/viewtopic.php?t=5971
 BUILDCMD0="$CACHE_DIR/.maven/bin/mvn -B -Duser.home=$BUILD_DIR -Dmaven.repo.local=$CACHE_DIR/.m2/repository -s $CACHE_DIR/.m2/settings.xml -DskipTests=true clean"
-BUILDCMD1="$CACHE_DIR/.maven/bin/mvn -B -Duser.home=$BUILD_DIR -Dmaven.repo.local=$CACHE_DIR/.m2/repository -s $CACHE_DIR/.m2/settings.xml -DskipTests=true install"
+BUILDCMD1="$CACHE_DIR/.maven/bin/mvn -B -Duser.home=$BUILD_DIR -Dmaven.repo.local=$CACHE_DIR/.m2/repository -s $CACHE_DIR/.m2/settings.xml -DskipTests=true"
 echo "-----> executing $BUILDCMD0"
 echo "-----> executing $BUILDCMD1"
 
